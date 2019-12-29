@@ -27,6 +27,7 @@
 
 /* https://github.com/PaulStoffregen/Time */
 #include <Time.h>
+#include <TimeLib.h>
 #include <Wire.h>
 
 /* See https://www.nxp.com/docs/en/data-sheet/PCF85063A.pdf for a
