@@ -95,6 +95,15 @@ PCF85063A::PCF85063A()
 }
 
 bool
+PCF85063A::available(){
+  Wire.beginTransmission(I2C_ADDR);
+  if(Wire.endTransmission())
+    return false;
+  else
+    return true;
+}
+
+bool
 PCF85063A::time_get(tmElements_t *now)
 {
   uint8_t buf[7];

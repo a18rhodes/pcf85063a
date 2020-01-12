@@ -92,6 +92,13 @@ class PCF85063A
     PCF85063A();
 
     /**
+     * Check if the RTC is present on the I2C bus.
+     *
+     * @return  True if RTC is on the bus
+     */
+    bool available();
+
+    /**
      * Get current time of the RTC.
      *
      * @param   now     Current time is written here
